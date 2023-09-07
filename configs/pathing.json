@@ -1,0 +1,12 @@
+{ 
+    "data": [
+        {
+            "to": "/home/sample.txt",
+            "from": "anothersample.txt"
+        }, 
+        {
+            "to": "/home/anothersample.txt",
+            "from": "sample.txt"
+        }
+    ]
+}
