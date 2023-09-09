@@ -53,6 +53,10 @@
             "from": "alacritty.yml"
         },
         {
+            "to": "/.config/alacritty/themes/main.yaml",
+            "from": "main.yaml"
+        },
+        {
             "to": "/.config/electron25-flags.conf",
             "from": "electron25-flags.conf"
         },

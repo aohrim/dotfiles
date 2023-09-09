@@ -7,7 +7,7 @@ bindsym $mod+s              exec grim -g "$(slurp -d)" - | wl-copy
 bindsym $mod+Print          exec grim -o DP-3 - | wl-copy
 bindsym $mod+Shift+Print    exec grim -o DP-3 -t jpeg ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%s)
 bindsym $mod+Shift+c        reload
-bindsym $mod+l              exec swaylock
+bindsym $mod+l              exec swaylock -i "$HOME/Pictures/wallpapers/lain.jpg"
 bindsym $mod+Shift+e        exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Left           focus left
 bindsym $mod+Down           focus down

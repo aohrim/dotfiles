@@ -5,10 +5,31 @@
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-right": [ "pulseaudio", "cpu", "memory","disk#main", "disk#storage", "clock", "tray"],
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%H:%M:%S}",
         "format-alt": "{:%d %B, %Y}",
-        "interval": 1
+        "interval": 1,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#654ea3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#b55f22'><b>W{}</b></span>",
+                "weekdays":   "<span color='#7f6b75'><b>{}</b></span>",
+                "today":      "<span color='#c50ed2'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "pulseaudio": {
         "format": " {volume}%"
@@ -34,9 +55,11 @@
         }
     },
     "sway/workspaces": {
-        "disable-scroll": false,
+        "smooth-scrolling-threshold": 1,
+        "disable-scroll-wraparound": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": ""
+        "format": "",
+        "enable-bar-scroll": true
     }
 }
