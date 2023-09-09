@@ -1,0 +1,10 @@
+gaps inner 25
+gaps outer 0
+
+default_border pixel 5
+floating_modifier $mod normal
+smart_borders on
+smart_gaps off
+
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"

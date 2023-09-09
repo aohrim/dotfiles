@@ -1,0 +1,23 @@
+assign [app_id="firefox"] $ws1
+assign [app_id="org.telegram.desktop"] $ws1
+assign [app_id="chromium"] $ws2
+assign [class="Slack"] $ws2
+assign [app_id="psensor"] $ws3
+assign [app_id="calibre"] $ws3
+assign [class="steam"] $ws4
+assign [app_id="org.kde.akregator"] $ws3
+assign [app_id="Lollypop"] $ws5
+
+for_window [app_id="Alacritty"] floating enable, resize set width 1200 px height 600 px
+for_window [app_id="pavucontrol"] floating enable, resize set width 1200 px height 600 px
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [window_role="About"] floating enable
+for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+for_window [title="htop"] floating enable, resize set width 50 ppt height 70 ppt
+for_window [title="Save File"] floating enable
+for_window [app_id="firedragon" title="firedragon — Sharing Indicator"] kill

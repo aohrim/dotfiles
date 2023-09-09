@@ -1,12 +1,52 @@
 { 
     "data": [
         {
-            "to": "/home/sample.txt",
-            "from": "anothersample.txt"
+            "to": "/.config/sway/config.d/50-systemd-user.conf",
+            "from": "50-systemd-user.conf"
         }, 
         {
-            "to": "/home/anothersample.txt",
-            "from": "sample.txt"
+            "to": "/.config/sway/config",
+            "from": "sway"
+        },
+        {
+            "to": "/.config/fontconfig/fonts.conf",
+            "from": "fonts.conf"
+        },
+        {
+            "to": "/.config/fish/config.fish",
+            "from": "config.fish"
+        },
+        {
+            "to": "/.config/chromium-flags.conf",
+            "from": "chromium-flags.conf"
+        },
+        {
+            "to": "/.config/paru/paru.conf",
+            "from": "paru.conf"
+        },
+        {
+            "to": "/.config/sway/config.d/startup",
+            "from": "sway-startup"
+        },
+        {
+            "to": "/.config/sway/config.d/layout",
+            "from": "sway-layout"
+        },
+        {
+            "to": "/.config/sway/config.d/outputs",
+            "from": "sway-outputs"
+        },
+        {
+            "to": "/.config/sway/config.d/bindings",
+            "from": "sway-bindings"
+        },
+        {
+            "to": "/.config/sway/config.d/assigns",
+            "from": "sway-assigns"
+        },
+        {
+            "to": "/.config/alacritty/alacritty.yml",
+            "from": "alacritty.yml"
         }
     ]
 }
