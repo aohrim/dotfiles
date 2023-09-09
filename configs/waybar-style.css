@@ -1,0 +1,68 @@
+@define-color text #654ea3;
+@define-color background #000;
+@define-color active #c50ed2;
+@define-color urgent #f90c4f;
+
+* {
+	border: none;
+    font-family: "Anonymous Pro" ;
+	font-size: 16px;
+	min-height: 10px;
+}
+
+window#waybar {
+	background: @background;
+	opacity: 0.9;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	margin-top: 6px;
+	padding-left: 3px;
+	padding-right: 3px;
+	transition: none;
+    color: transparent;
+	background: transparent;
+}
+#pulseaudio, #clock, #memory, #cpu, #tray, #disk {
+    margin-left: 5px;
+    border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 0px;
+	color: @text;
+	background: transparent;
+}
+
+#workspaces button {
+	border-bottom: 2px solid @text;
+	border-radius: 0;
+	margin-right: 5px;
+}
+#workspaces button.active {
+	border-bottom: 2px solid @active;
+}
+#workspaces button:hover {
+	border-bottom: 2px red;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+	border-bottom: 5px solid @active;
+}
+
+#workspaces button.focused {
+	border-bottom: 8px solid @active;
+	transition: 0.5s;
+}
+
+#workspaces button.urgent {
+	border-bottom: 2px solid @urgent;
+}

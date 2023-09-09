@@ -1,6 +1,14 @@
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec_always setwall random $HOME/Pictures/wallpapers/ -c sway
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec firefox
-exec steam
+exec steam -forcedesktopscaling 1.5
+exec slack --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
+exec discord --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
+exec code
 exec telegram-desktop
 exec psensor
+exec akregator
+exec lollypop
+exec transmission-gtk

@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "output": "DP-3",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-right": [ "pulseaudio", "cpu", "memory","disk#main", "disk#storage", "clock", "tray"],
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%d %B, %Y}",
+        "interval": 1
+    },
+    "pulseaudio": {
+        "format": " {volume}%"
+    },
+    "cpu": {
+        "format": " {}%"
+    },
+    "disk#main": {
+        "format": " {percentage_used} %",
+        "path": "/home",
+        "tooltip-format": " {used} / {total}"
+    },
+    "disk#storage": {
+        "format": " {percentage_used} %",
+        "path": "/storage",
+        "tooltip-format": "  {used} / {total}"
+    },
+    "memory": {
+        "format": " {}%",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": ""
+    }
+}

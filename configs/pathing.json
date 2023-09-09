@@ -21,6 +21,10 @@
             "from": "chromium-flags.conf"
         },
         {
+            "to": "/.config/code-flags.conf",
+            "from": "code-flags.conf"
+        },
+        {
             "to": "/.config/paru/paru.conf",
             "from": "paru.conf"
         },
@@ -47,6 +51,42 @@
         {
             "to": "/.config/alacritty/alacritty.yml",
             "from": "alacritty.yml"
+        },
+        {
+            "to": "/.config/electron25-flags.conf",
+            "from": "electron25-flags.conf"
+        },
+        {
+            "to": "/.config/electron25-flags.conf",
+            "from": "electron25-flags.conf"
+        },
+        {
+            "to": "/.config/sway/config.d/vars",
+            "from": "sway-vars"
+        },
+        {
+            "to": "/.config/waybar/config",
+            "from": "waybar"
+        },
+        {
+            "to": "/.config/waybar/style.css",
+            "from": "waybar-style.css"
+        },
+        {
+            "to": "/.bash_profile",
+            "from": "bashprofile"
+        },
+        {
+            "to": "/.config/sway/wireplumber-scripts",
+            "from": "wireplumber-scripts"
+        },
+        {
+            "to": "/usr/share/wayland-sessions/sway.desktop",
+            "from": "sway.desktop"
+        },
+        {
+            "to": "/etc/sddm.conf.d/sddm.conf",
+            "from": "sddm.conf"
         }
     ]
 }

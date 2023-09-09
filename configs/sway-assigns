@@ -1,13 +1,23 @@
+#swaymsg -t get_tree
 assign [app_id="firefox"] $ws1
+assign [app_id="discord"] $ws1
 assign [app_id="org.telegram.desktop"] $ws1
 assign [app_id="chromium"] $ws2
-assign [class="Slack"] $ws2
+assign [class="code-oss"] $ws2
+assign [app_id="Slack"] $ws2
 assign [app_id="psensor"] $ws3
 assign [app_id="calibre"] $ws3
-assign [class="steam"] $ws4
 assign [app_id="org.kde.akregator"] $ws3
-assign [app_id="Lollypop"] $ws5
+assign [class="steam"] $ws4
+assign [app_id="com.transmissionbt.transmission_66307_55312457"] $ws5
+assign [app_id="lollypop"] $ws5
 
+for_window [app_id="firefox"] layout tabbed
+for_window [app_id="discord"] layout tabbed
+for_window [app_id="org.telegram.desktop"] layout tabbed
+for_window [app_id="calibre"] layout tabbed
+for_window [app_id="psensor"] layout tabbed
+for_window [app_id="org.kde.akregator"] layout tabbed
 for_window [app_id="Alacritty"] floating enable, resize set width 1200 px height 600 px
 for_window [app_id="pavucontrol"] floating enable, resize set width 1200 px height 600 px
 for_window [window_role="pop-up"] floating enable
