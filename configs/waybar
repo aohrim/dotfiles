@@ -58,7 +58,7 @@
         "smooth-scrolling-threshold": 1,
         "disable-scroll-wraparound": true,
         "all-outputs": true,
-        "warp-on-scroll": false,
+        "warp-on-scroll": true,
         "format": "",
         "enable-bar-scroll": true
     }

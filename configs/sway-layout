@@ -13,6 +13,6 @@ for_window [shell="x_wayland"] title_format "%class - %title"
 client.focused          #0C0E15     #0C0E15     #c50ed2     #f4d802     #44266d
 client.focused_inactive #0C0E15     #0C0E15     #654ea3     #f4d802     #3e1072
 client.unfocused        #0C0E15     #0C0E15     #654ea3     #f4d802     #4b09a0
-client.urgent           #b55f22     #ebcb8b     #b55f22     #f4d802     #3e1072
+client.urgent           #b55f22     #c50ed2     #0C0E15    #f4d802     #3e1072
 
 font pango:Anonymous Pro 16

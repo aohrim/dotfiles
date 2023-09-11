@@ -5,6 +5,7 @@ exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec firefox
 exec steam -forcedesktopscaling 1.5
 exec slack --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
+exec code --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
 exec discord --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
 exec code
 exec telegram-desktop

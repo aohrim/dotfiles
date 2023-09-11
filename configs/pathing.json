@@ -91,6 +91,10 @@
         {
             "to": "/etc/sddm.conf.d/sddm.conf",
             "from": "sddm.conf"
+        },
+        {
+            "to": "/.config/nvim/init.vim",
+            "from": "nvim.conf"
         }
     ]
 }
