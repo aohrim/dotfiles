@@ -95,6 +95,10 @@
         {
             "to": "/.config/nvim/init.vim",
             "from": "nvim.conf"
+        },
+        {
+            "to": "/Scripts/LIGHTSOFF.sh",
+            "from": "lightsoff.sh"
         }
     ]
 }

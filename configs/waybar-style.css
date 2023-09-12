@@ -1,4 +1,4 @@
-@define-color text #654ea3;
+@define-color icon #654ea3;
 @define-color background #000;
 @define-color active #c50ed2;
 @define-color urgent #f90c4f;
@@ -10,6 +10,9 @@
 	min-height: 10px;
 }
 
+tooltip {
+	opacity: 0.9;
+}
 
 window#waybar {
 	background: @background;
@@ -18,6 +21,10 @@ window#waybar {
 
 window#waybar.hidden {
 	opacity: 0.2;
+}
+
+.icon {
+	color: blue;
 }
 
 #window {
@@ -34,12 +41,13 @@ window#waybar.hidden {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-bottom: 0px;
-	color: @text;
+	color: @icon;
 	background: transparent;
 }
 
+
 #workspaces button {
-	border-bottom: 2px solid @text;
+	border-bottom: 2px solid @icon;
 	border-radius: 0;
 	margin-right: 5px;
 }
