@@ -12,6 +12,11 @@
 
 tooltip {
 	opacity: 0.9;
+	background: @background;
+}
+
+tooltip label {
+	color: #b5a6e0;
 }
 
 window#waybar {
