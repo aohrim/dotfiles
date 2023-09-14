@@ -2,15 +2,18 @@
     "layer": "top",
     "position": "bottom",
     "output": "DP-3",
+
+    "height": 25,
+    "exclusive": true,
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-right": [ "pulseaudio", "cpu", "memory","disk#main", "disk#storage", "clock", "tray"],
     "clock": {
         "format": "<span color='#b5a6e0'>{:%H:%M:%S}</span>",
-        "format-alt": "{:%d %B, %Y}",
+        "format-alt": "<span color='#b5a6e0'>{:%d %B, %Y}</span>",
         "interval": 1,
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-            "mode"          : "year",
+            "mode"          : "month",
             "mode-mon-col"  : 3,
             "weeks-pos"     : "right",
             "on-scroll"     : 1,
@@ -32,7 +35,8 @@
         }
     },
     "pulseaudio": {
-        "format": " <span color='#b5a6e0'>{volume}%</span>"
+        "format": " <span color='#b5a6e0'>{volume}%</span>",
+        "scroll-step": 5.0
     },
     "cpu": {
         "format": " <span color='#b5a6e0'>{}%</span>"
