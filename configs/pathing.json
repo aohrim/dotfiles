@@ -57,14 +57,6 @@
             "from": "main.yaml"
         },
         {
-            "to": "/.config/electron25-flags.conf",
-            "from": "electron25-flags.conf"
-        },
-        {
-            "to": "/.config/electron25-flags.conf",
-            "from": "electron25-flags.conf"
-        },
-        {
             "to": "/.config/sway/config.d/vars",
             "from": "sway-vars"
         },
@@ -79,10 +71,6 @@
         {
             "to": "/.bash_profile",
             "from": "bashprofile"
-        },
-        {
-            "to": "/.config/sway/wireplumber-scripts",
-            "from": "wireplumber-scripts"
         },
         {
             "to": "/usr/share/wayland-sessions/sway.desktop",

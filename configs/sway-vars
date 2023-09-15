@@ -15,3 +15,5 @@ set $up k
 set $right l
 set $term alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $output1 "DP-1"
+set $output2 "HDMI-A-1"

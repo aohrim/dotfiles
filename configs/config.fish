@@ -9,5 +9,5 @@ set -Ux VDPAU_DRIVER                 radeonsi
 set -Ux LIBVA_DRIVER_NAME            radeonsi
 set -Ua SSH_KEYS_TO_AUTOLOAD         (ls ~/.ssh/ | grep id_ | grep -v \\.)
 # env --unset=SDL_VIDEODRIVER on steam per game if necessary
-set -Ux SDL_VIDEODRIVER              wayland
+set -Ux SDL_VIDEODRIVER              wayland,x11
 set -Ux SDL_DYNAMIC_API              /usr/lib/libSDL2-2.0.so

@@ -9,8 +9,19 @@ assign [app_id="psensor"] $ws3
 assign [app_id="calibre"] $ws3
 assign [app_id="org.kde.akregator"] $ws3
 assign [class="steam"] $ws4
-assign [app_id="com.transmissionbt.transmission_66307_55312457"] $ws5
+assign [app_id="com.transmissionbt.transmission_66306_10485762"] $ws5
 assign [app_id="lollypop"] $ws5
+
+workspace $ws1 output $output1
+workspace $ws2 output $output1
+workspace $ws3 output $output1
+workspace $ws4 output $output1
+workspace $ws5 output $output2
+workspace $ws6 output $output2
+workspace $ws7 output $output2
+workspace $ws8 output $output2
+workspace $ws9 output $output2
+workspace $ws10 output $output2
 
 for_window [app_id="firefox"] layout tabbed
 for_window [app_id="discord"] layout tabbed

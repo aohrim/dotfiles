@@ -10,4 +10,5 @@ export _JAVA_AWT_WM_NONREPARENTING="1"
 export QT_QPA_PLATFORMTHEME="qt6ct"
 export QT_STYLE_OVERRIDE="kvantum"
 export XDG_CURRENT_DESKTOP="sway"
+export SDL_VIDEODRIVER="wayland,x11"
 [[ -f ~/.bashrc ]] && . ~/.bashrc

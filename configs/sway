@@ -7,7 +7,6 @@ bar {
     swaybar_command waybar
 }
 workspace_auto_back_and_forth yes
-mouse_warping none
 
 include $HOME/.config/sway/config.d/vars
 include $HOME/.config/sway/config.d/*
