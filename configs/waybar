@@ -6,7 +6,7 @@
     "height": 25,
     "exclusive": true,
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": [ "pulseaudio", "cpu", "memory","disk#main", "disk#storage", "clock", "tray"],
+    "modules-right": [ "pulseaudio", "cpu", "memory","disk#main", "disk#storage", "clock"],
     "clock": {
         "format": "<span color='#b5a6e0'>{:%H:%M:%S}</span>",
         "format-alt": "<span color='#b5a6e0'>{:%d %B, %Y}</span>",
