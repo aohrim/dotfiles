@@ -1,0 +1,6 @@
+[Unit]
+Description=Turns RGB lights off on memory kit
+[Service]
+ExecStart=/usr/bin/LIGHTSOFF.sh
+[Install]
+WantedBy=multi-user.target

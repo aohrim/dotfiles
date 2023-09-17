@@ -8,7 +8,6 @@ exec bash ~/Scripts/LIGHTSOFF.sh
 exec firefox
 exec steam -forcedesktopscaling 1
 exec slack --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
-exec code --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
 exec discord --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
 exec telegram-desktop
 exec psensor

@@ -87,6 +87,14 @@
         {
             "to": "/Scripts/LIGHTSOFF.sh",
             "from": "lightsoff.sh"
+        },
+        {
+            "to": "/usr/bin/LIGHTSOFF.sh",
+            "from": "lightsoff.sh"
+        },
+        {
+            "to": "/etc/systemd/system/lightsoff.service",
+            "from": "lightsoff.service"
         }
     ]
 }
