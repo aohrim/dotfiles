@@ -61,14 +61,6 @@
             "from": "sway-vars"
         },
         {
-            "to": "/.config/waybar/config",
-            "from": "waybar"
-        },
-        {
-            "to": "/.config/waybar/style.css",
-            "from": "waybar-style.css"
-        },
-        {
             "to": "/.bash_profile",
             "from": "bashprofile"
         },

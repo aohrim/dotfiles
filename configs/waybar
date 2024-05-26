@@ -2,7 +2,6 @@
     "layer": "top",
     "position": "bottom",
     "output": "DP-1",
-
     "height": 25,
     "exclusive": true,
     "modules-left": ["sway/workspaces", "sway/mode"],
